@@ -57,36 +57,31 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
   $(document).ready(function() {
-    // Handle form submission
+    // handle form submission
     $('#loginForm').submit(function(e) {
-      e.preventDefault(); // Prevent the form from submitting
+      e.preventDefault(); // prevent the form from submitting
 
-      // Get entered username and password
+      // get entered username and password
       var username = $('#username').val();
       var password = $('#password').val();
 
-      // Check if username and password are correct
+      // check if username and password are correct
       if (username === "gaurav17" && password === "password") {
         alert('Login successful!');
-        // Redirect to dashboard or perform other actions for successful login
       } else {
         alert('Invalid username or password. Please try again.');
       }
     });
 
-    // Handle forgot password link click
     $('#forgotPasswordLink').click(function(e) {
-      e.preventDefault(); // Prevent the link from navigating
+      e.preventDefault();
 
-      // Show a modal, redirect to a forgot password page, or perform any other action
       alert('Forgot password link clicked!');
     });
 
-    // Handle create account link click
     $('#createAccountLink').click(function(e) {
-      e.preventDefault(); // Prevent the link from navigating
+      e.preventDefault(); 
 
-      // Redirect to create account page or perform any other action
       alert('Create new account link clicked!');
     });
   });
